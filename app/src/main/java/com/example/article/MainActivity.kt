@@ -58,10 +58,9 @@ fun ArticleText(title: String, modifier: Modifier = Modifier) {
             text = title,
             modifier = modifier
                 .padding(
-                    top = 8.dp,
-                    bottom = 8.dp
+                  16.dp
                 ),
-            fontSize = 30.sp
+            fontSize = 24.sp
 
         )
         Text(
@@ -69,18 +68,18 @@ fun ArticleText(title: String, modifier: Modifier = Modifier) {
             textAlign = TextAlign.Justify,
             modifier = modifier
                 .padding(
-                    top = 8.dp,
-                    bottom = 8.dp
+                   16.dp
                 ),
-            fontSize = 24.sp,
             lineHeight = 26.sp,
         )
         Text(
             text = stringResource(R.string.paragraph_two_text),
             textAlign = TextAlign.Justify,
-            fontSize = 24.sp,
+            modifier = modifier
+                .padding(
+                    16.dp
+                ),
             lineHeight = 26.sp,
-            letterSpacing = 2.sp
         )
     }
 }
